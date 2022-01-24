@@ -70,8 +70,8 @@ const generateReadme = ({ project, username, description, installation, usage, l
 
 const init = () => {
     questions()
-      .then((answers) => fs.writeFileSync('README2.md', generateReadme (answers)))
-      .then(() => console.log('Successfully wrote to README2.md'))
+      .then((answers) => fs.writeFileSync('README.md', generateReadme (answers)))
+      .then(() => console.log('Successfully wrote to README.md'))
       .catch((err) => console.error(err));
   };
 
